@@ -1,0 +1,18 @@
+set cut_paste_input [stack 0]
+version 11.1 v2
+push $cut_paste_input
+ViewMetaData {
+ metadatafilter timecode
+ name ViewMetaData1
+ selected true
+ xpos -257
+ ypos -105
+}
+StickyNote {
+ inputs 0
+ name StickyNote1
+ label "timecode: \[python \{nuke.toNode('Read1').metadata()\['input/timecode']\}]\nframe: \[python \{nuke.frame()\}]"
+ selected true
+ xpos -269
+ ypos -157
+}

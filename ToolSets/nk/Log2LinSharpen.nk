@@ -1,0 +1,23 @@
+set cut_paste_input [stack 0]
+version 10.5 v5
+push $cut_paste_input
+Log2Lin {
+ operation lin2log
+ name Log2Lin1
+ selected true
+ xpos -260
+ ypos 375
+}
+Sharpen {
+ size 5
+ name Sharpen1
+ selected true
+ xpos -260
+ ypos 419
+}
+Log2Lin {
+ name Log2Lin2
+ selected true
+ xpos -260
+ ypos 471
+}

@@ -1,0 +1,96 @@
+set cut_paste_input [stack 0]
+version 11.1 v2
+push $cut_paste_input
+NoOp {
+ name Img_Input
+ selected true
+ xpos -590
+ ypos 131
+}
+Dot {
+ name Dot1
+ tile_color 0x323232ff
+ selected true
+ xpos -556
+ ypos 186
+}
+set Nb5818720 [stack 0]
+Dot {
+ name Dot2
+ selected true
+ xpos -666
+ ypos 186
+}
+set Nc4de6680 [stack 0]
+Dot {
+ name Dot3
+ selected true
+ xpos -776
+ ypos 186
+}
+Unpremult {
+ name Unpremult4
+ selected true
+ xpos -810
+ ypos 231
+}
+Erode {
+ size 0.1
+ name Erode4
+ selected true
+ xpos -810
+ ypos 275
+}
+Premult {
+ name Premult5
+ selected true
+ xpos -810
+ ypos 327
+}
+EdgeBlur {
+ size 4
+ name EdgeBlur2
+ selected true
+ xpos -810
+ ypos 371
+}
+push $Nc4de6680
+Blur {
+ size 5
+ mix 10
+ name Blur7
+ selected true
+ xpos -700
+ ypos 275
+}
+Unpremult {
+ name Unpremult5
+ selected true
+ xpos -700
+ ypos 327
+}
+Merge2 {
+ inputs 2
+ name Merge20
+ selected true
+ xpos -700
+ ypos 375
+}
+push $Nb5818720
+ShuffleCopy {
+ inputs 2
+ red red
+ green green
+ blue blue
+ alpha alpha2
+ name ShuffleCopy2
+ selected true
+ xpos -590
+ ypos 375
+}
+Premult {
+ name Premult6
+ selected true
+ xpos -590
+ ypos 423
+}
